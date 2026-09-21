@@ -1,0 +1,11 @@
+2026-09-21 03:55:50 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01168MM-PN01169MM-PN01170MM-PN01171MM-PN01174MM-PN01175MM-PN01176MM-PN01177MM-PN01179MM-PN01180MM/json/2010-1/2025-12/esp
+2026-09-21 03:55:52 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01181MM-PN01182MM/json/2010-1/2025-12/esp
+2026-09-21 03:55:54 | Guardado datos_crudos/datos_crudos_bcrp_2024200509B.csv con 2304 filas
+2026-09-21 03:56:54 | Banco Mundial ERROR: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=60)
+2026-09-21 03:56:54 | Fin de 01_extraccion_api.py
+2026-09-20 23:04:14 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01168MM-PN01169MM-PN01170MM-PN01171MM-PN01174MM-PN01175MM-PN01176MM-PN01177MM-PN01179MM-PN01180MM/json/2010-1/2025-12/esp
+2026-09-20 23:04:16 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01181MM-PN01182MM/json/2010-1/2025-12/esp
+2026-09-20 23:04:18 | Guardado datos_crudos/datos_crudos_bcrp_2024200509B.csv con 2304 filas
+2026-09-20 23:04:18 | Banco Mundial intento 1 HTTP 200 | https://api.worldbank.org/v2/country/PER/indicator/SP.DYN.LE00.IN?format=json&date=2010:2025&per_page=100
+2026-09-20 23:04:18 | Guardado datos_crudos/datos_crudos_bm_2024200509B.csv con 16 filas
+2026-09-20 23:04:18 | Fin de 01_extraccion_api.py
