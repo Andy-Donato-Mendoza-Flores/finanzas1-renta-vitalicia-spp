@@ -9,3 +9,475 @@
 2026-09-20 23:04:18 | Banco Mundial intento 1 HTTP 200 | https://api.worldbank.org/v2/country/PER/indicator/SP.DYN.LE00.IN?format=json&date=2010:2025&per_page=100
 2026-09-20 23:04:18 | Guardado datos_crudos/datos_crudos_bm_2024200509B.csv con 16 filas
 2026-09-20 23:04:18 | Fin de 01_extraccion_api.py
+2026-09-23 02:02:18 | SBS HTTP 200 | 4136 bytes | https://www.sbs.gob.pe/robots.txt
+2026-09-23 02:02:21 | SBS HTTP 200 | 31226 bytes | https://www.sbs.gob.pe/app/stats_net/stats/EstadisticaBoletinEstadistico.aspx?p=31
+2026-09-23 02:02:23 | Guardado datos_crudos/sbs_boletin_afp_2024200509B.html
+2026-09-23 02:02:23 | Enlaces a archivos encontrados: 0
+2026-09-23 02:02:23 | Fin de 02_scraping_web.py (etapa de diagnóstico)
+2026-09-23 02:05:15 | SBS HTTP 200 | 4136 bytes | https://www.sbs.gob.pe/robots.txt
+2026-09-23 02:05:17 | SBS HTTP 200 | 31226 bytes | https://www.sbs.gob.pe/app/stats_net/stats/EstadisticaBoletinEstadistico.aspx?p=31
+2026-09-23 02:05:19 | Guardado datos_crudos/sbs_boletin_afp_2024200509B.html
+2026-09-23 02:05:19 | Enlaces a archivos encontrados: 0
+2026-09-23 02:05:19 | Fin de 02_scraping_web.py (etapa de diagnóstico)
+2026-09-23 02:15:38 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Enero/FP-1359-en2010.XLS
+2026-09-23 02:15:40 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Febrero/FP-1359-fe2010.XLS
+2026-09-23 02:15:42 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Marzo/FP-1359-ma2010.XLS
+2026-09-23 02:15:43 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Abril/FP-1359-ab2010.XLS
+2026-09-23 02:15:45 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Mayo/FP-1359-my2010.XLS
+2026-09-23 02:15:47 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Junio/FP-1359-jn2010.XLS
+2026-09-23 02:15:49 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Julio/FP-1359-jl2010.XLS
+2026-09-23 02:15:51 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Agosto/FP-1359-ag2010.XLS
+2026-09-23 02:15:52 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Setiembre/FP-1359-se2010.XLS
+2026-09-23 02:15:54 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Octubre/FP-1359-oc2010.XLS
+2026-09-23 02:15:56 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Noviembre/FP-1359-no2010.XLS
+2026-09-23 02:15:57 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Diciembre/FP-1359-di2010.XLS
+2026-09-23 02:15:59 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Enero/FP-1359-en2011.XLS
+2026-09-23 02:16:01 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Febrero/FP-1359-fe2011.XLS
+2026-09-23 02:16:03 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Marzo/FP-1359-ma2011.XLS
+2026-09-23 02:16:04 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Abril/FP-1359-ab2011.XLS
+2026-09-23 02:16:06 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Mayo/FP-1359-my2011.XLS
+2026-09-23 02:16:08 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Junio/FP-1359-jn2011.XLS
+2026-09-23 02:16:10 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Julio/FP-1359-jl2011.XLS
+2026-09-23 02:16:12 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Agosto/FP-1359-ag2011.XLS
+2026-09-23 02:16:13 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Setiembre/FP-1359-se2011.XLS
+2026-09-23 02:16:15 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Octubre/FP-1359-oc2011.XLS
+2026-09-23 02:16:17 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Noviembre/FP-1359-no2011.XLS
+2026-09-23 02:16:18 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Diciembre/FP-1359-di2011.XLS
+2026-09-23 02:16:20 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Enero/FP-1359-en2012.XLS
+2026-09-23 02:16:22 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Febrero/FP-1359-fe2012.XLS
+2026-09-23 02:16:24 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Marzo/FP-1359-ma2012.XLS
+2026-09-23 02:16:25 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Abril/FP-1359-ab2012.XLS
+2026-09-23 02:16:27 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Mayo/FP-1359-my2012.XLS
+2026-09-23 02:16:29 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Junio/FP-1359-jn2012.XLS
+2026-09-23 02:16:31 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Julio/FP-1359-jl2012.XLS
+2026-09-23 02:16:33 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Agosto/FP-1359-ag2012.XLS
+2026-09-23 02:16:34 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Setiembre/FP-1359-se2012.XLS
+2026-09-23 02:16:36 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Octubre/FP-1359-oc2012.XLS
+2026-09-23 02:16:38 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Noviembre/FP-1359-no2012.XLS
+2026-09-23 02:16:40 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Diciembre/FP-1359-di2012.XLS
+2026-09-23 02:16:42 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Enero/FP-1359-en2013.XLS
+2026-09-23 02:16:43 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Febrero/FP-1359-fe2013.XLS
+2026-09-23 02:16:45 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Marzo/FP-1359-ma2013.XLS
+2026-09-23 02:16:47 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Abril/FP-1359-ab2013.XLS
+2026-09-23 02:16:49 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Mayo/FP-1359-my2013.XLS
+2026-09-23 02:16:50 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Junio/FP-1359-jn2013.XLS
+2026-09-23 02:16:52 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Julio/FP-1359-jl2013.XLS
+2026-09-23 02:16:54 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Agosto/FP-1359-ag2013.XLS
+2026-09-23 02:16:55 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Setiembre/FP-1359-se2013.XLS
+2026-09-23 02:16:57 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Octubre/FP-1359-oc2013.XLS
+2026-09-23 02:16:59 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Noviembre/FP-1359-no2013.XLS
+2026-09-23 02:17:01 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Diciembre/FP-1359-di2013.XLS
+2026-09-23 02:17:02 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Enero/FP-1359-en2014.XLS
+2026-09-23 02:17:04 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Febrero/FP-1359-fe2014.XLS
+2026-09-23 02:17:06 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Marzo/FP-1359-ma2014.XLS
+2026-09-23 02:17:08 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Abril/FP-1359-ab2014.XLS
+2026-09-23 02:17:09 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Mayo/FP-1359-my2014.XLS
+2026-09-23 02:17:11 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Junio/FP-1359-jn2014.XLS
+2026-09-23 02:17:13 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Julio/FP-1359-jl2014.XLS
+2026-09-23 02:17:15 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Agosto/FP-1359-ag2014.XLS
+2026-09-23 02:17:16 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Setiembre/FP-1359-se2014.XLS
+2026-09-23 02:17:18 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Octubre/FP-1359-oc2014.XLS
+2026-09-23 02:17:20 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Noviembre/FP-1359-no2014.XLS
+2026-09-23 02:17:22 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Diciembre/FP-1359-di2014.XLS
+2026-09-23 02:17:24 | SBS HTTP 200 | 138240 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Enero/FP-1359-en2015.XLS
+2026-09-23 02:17:26 | AVISO: sin fila 'Día' en FP-1359-en2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:27 | SBS HTTP 200 | 137728 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Febrero/FP-1359-fe2015.XLS
+2026-09-23 02:17:28 | AVISO: sin fila 'Día' en FP-1359-fe2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:29 | SBS HTTP 200 | 139264 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Marzo/FP-1359-ma2015.XLS
+2026-09-23 02:17:31 | AVISO: sin fila 'Día' en FP-1359-ma2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:32 | SBS HTTP 200 | 138752 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Abril/FP-1359-ab2015.XLS
+2026-09-23 02:17:33 | AVISO: sin fila 'Día' en FP-1359-ab2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:34 | SBS HTTP 200 | 138240 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Mayo/FP-1359-my2015.XLS
+2026-09-23 02:17:36 | AVISO: sin fila 'Día' en FP-1359-my2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:36 | SBS HTTP 200 | 139264 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Junio/FP-1359-jn2015.XLS
+2026-09-23 02:17:38 | AVISO: sin fila 'Día' en FP-1359-jn2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:39 | SBS HTTP 200 | 586240 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Julio/FP-1359-jl2015.XLS
+2026-09-23 02:17:41 | AVISO: sin fila 'Día' en FP-1359-jl2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:44 | SBS HTTP 200 | 585728 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Agosto/FP-1359-ag2015.XLS
+2026-09-23 02:17:45 | AVISO: sin fila 'Día' en FP-1359-ag2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:46 | SBS HTTP 200 | 139264 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Setiembre/FP-1359-se2015.XLS
+2026-09-23 02:17:47 | AVISO: sin fila 'Día' en FP-1359-se2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:48 | SBS HTTP 200 | 138752 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Octubre/FP-1359-oc2015.XLS
+2026-09-23 02:17:50 | AVISO: sin fila 'Día' en FP-1359-oc2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:50 | SBS HTTP 200 | 141824 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Noviembre/FP-1359-no2015.XLS
+2026-09-23 02:17:52 | AVISO: sin fila 'Día' en FP-1359-no2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:53 | SBS HTTP 200 | 141824 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2015/Diciembre/FP-1359-di2015.XLS
+2026-09-23 02:17:55 | AVISO: sin fila 'Día' en FP-1359-di2015.XLS hoja VC-Promedio 
+2026-09-23 02:17:56 | SBS HTTP 200 | 138752 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Enero/FP-1359-en2016.XLS
+2026-09-23 02:17:58 | AVISO: sin fila 'Día' en FP-1359-en2016.XLS hoja VC-Promedio 
+2026-09-23 02:17:59 | SBS HTTP 200 | 138752 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Febrero/FP-1359-fe2016.XLS
+2026-09-23 02:18:00 | AVISO: sin fila 'Día' en FP-1359-fe2016.XLS hoja VC-Promedio
+2026-09-23 02:18:01 | SBS HTTP 200 | 140288 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Marzo/FP-1359-ma2016.XLS
+2026-09-23 02:18:03 | AVISO: sin fila 'Día' en FP-1359-ma2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:04 | SBS HTTP 200 | 143360 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Abril/FP-1359-ab2016.XLS
+2026-09-23 02:18:05 | AVISO: sin fila 'Día' en FP-1359-ab2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:06 | SBS HTTP 200 | 142848 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Mayo/FP-1359-my2016.XLS
+2026-09-23 02:18:08 | AVISO: sin fila 'Día' en FP-1359-my2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:09 | SBS HTTP 200 | 143360 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Junio/FP-1359-jn2016.XLS
+2026-09-23 02:18:11 | AVISO: sin fila 'Día' en FP-1359-jn2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:12 | SBS HTTP 200 | 203776 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Julio/FP-1359-jl2016.XLS
+2026-09-23 02:18:14 | AVISO: sin fila 'Día' en FP-1359-jl2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:15 | SBS HTTP 200 | 197120 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Agosto/FP-1359-ag2016.XLS
+2026-09-23 02:18:17 | AVISO: sin fila 'Día' en FP-1359-ag2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:18 | SBS HTTP 200 | 205824 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Setiembre/FP-1359-se2016.XLS
+2026-09-23 02:18:19 | AVISO: sin fila 'Día' en FP-1359-se2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:20 | SBS HTTP 200 | 205312 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Octubre/FP-1359-oc2016.XLS
+2026-09-23 02:18:22 | AVISO: sin fila 'Día' en FP-1359-oc2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:23 | SBS HTTP 200 | 143872 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Noviembre/FP-1359-no2016.XLS
+2026-09-23 02:18:25 | AVISO: sin fila 'Día' en FP-1359-no2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:25 | SBS HTTP 200 | 115712 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2016/Diciembre/FP-1359-di2016.XLS
+2026-09-23 02:18:27 | AVISO: sin fila 'Día' en FP-1359-di2016.XLS hoja VC-Promedio 
+2026-09-23 02:18:27 | SBS HTTP 200 | 135168 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Enero/FP-1359-en2017.XLS
+2026-09-23 02:18:29 | AVISO: sin fila 'Día' en FP-1359-en2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:30 | SBS HTTP 200 | 228352 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Febrero/FP-1359-fe2017.XLS
+2026-09-23 02:18:32 | AVISO: sin fila 'Día' en FP-1359-fe2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:32 | SBS HTTP 200 | 102912 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Marzo/FP-1359-ma2017.XLS
+2026-09-23 02:18:34 | AVISO: sin fila 'Día' en FP-1359-ma2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:34 | SBS HTTP 200 | 134144 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Abril/FP-1359-ab2017.XLS
+2026-09-23 02:18:36 | AVISO: sin fila 'Día' en FP-1359-ab2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:37 | SBS HTTP 200 | 136192 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Mayo/FP-1359-my2017.XLS
+2026-09-23 02:18:39 | AVISO: sin fila 'Día' en FP-1359-my2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:40 | SBS HTTP 200 | 135168 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Junio/FP-1359-jn2017.XLS
+2026-09-23 02:18:42 | AVISO: sin fila 'Día' en FP-1359-jn2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:42 | SBS HTTP 200 | 134656 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Julio/FP-1359-jl2017.XLS
+2026-09-23 02:18:44 | AVISO: sin fila 'Día' en FP-1359-jl2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:45 | SBS HTTP 200 | 139776 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Agosto/FP-1359-ag2017.XLS
+2026-09-23 02:18:46 | AVISO: sin fila 'Día' en FP-1359-ag2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:47 | SBS HTTP 200 | 209920 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Setiembre/FP-1359-se2017.XLS
+2026-09-23 02:18:49 | AVISO: sin fila 'Día' en FP-1359-se2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:50 | SBS HTTP 200 | 201728 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Octubre/FP-1359-oc2017.XLS
+2026-09-23 02:18:51 | AVISO: sin fila 'Día' en FP-1359-oc2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:52 | SBS HTTP 200 | 145920 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Noviembre/FP-1359-no2017.XLS
+2026-09-23 02:18:54 | AVISO: sin fila 'Día' en FP-1359-no2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:54 | SBS HTTP 200 | 144896 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2017/Diciembre/FP-1359-di2017.XLS
+2026-09-23 02:18:56 | AVISO: sin fila 'Día' en FP-1359-di2017.XLS hoja VC-Promedio 
+2026-09-23 02:18:57 | SBS HTTP 200 | 143872 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Enero/FP-1359-en2018.XLS
+2026-09-23 02:18:59 | AVISO: sin fila 'Día' en FP-1359-en2018.XLS hoja VC-Promedio 
+2026-09-23 02:18:59 | SBS HTTP 200 | 177152 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Febrero/FP-1359-fe2018.XLS
+2026-09-23 02:19:01 | AVISO: sin fila 'Día' en FP-1359-fe2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:01 | SBS HTTP 200 | 74311 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Marzo/FP-1359-ma2018.XLS
+2026-09-23 02:19:03 | ERROR al abrir FP-1359-ma2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:19:03 | SBS HTTP 200 | 192000 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Abril/FP-1359-ab2018.XLS
+2026-09-23 02:19:05 | AVISO: sin fila 'Día' en FP-1359-ab2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:06 | SBS HTTP 200 | 74867 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Mayo/FP-1359-my2018.XLS
+2026-09-23 02:19:07 | ERROR al abrir FP-1359-my2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:19:08 | SBS HTTP 200 | 124928 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Junio/FP-1359-jn2018.XLS
+2026-09-23 02:19:10 | AVISO: sin fila 'Día' en FP-1359-jn2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:10 | SBS HTTP 200 | 192000 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Julio/FP-1359-jl2018.XLS
+2026-09-23 02:19:12 | AVISO: sin fila 'Día' en FP-1359-jl2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:13 | SBS HTTP 200 | 188416 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Agosto/FP-1359-ag2018.XLS
+2026-09-23 02:19:14 | AVISO: sin fila 'Día' en FP-1359-ag2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:15 | SBS HTTP 200 | 123904 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Setiembre/FP-1359-se2018.XLS
+2026-09-23 02:19:17 | AVISO: sin fila 'Día' en FP-1359-se2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:18 | SBS HTTP 200 | 190976 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Octubre/FP-1359-oc2018.XLS
+2026-09-23 02:19:19 | AVISO: sin fila 'Día' en FP-1359-oc2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:20 | SBS HTTP 200 | 124928 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Noviembre/FP-1359-no2018.XLS
+2026-09-23 02:19:21 | AVISO: sin fila 'Día' en FP-1359-no2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:22 | SBS HTTP 200 | 187904 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2018/Diciembre/FP-1359-di2018.XLS
+2026-09-23 02:19:24 | AVISO: sin fila 'Día' en FP-1359-di2018.XLS hoja VC-Promedio 
+2026-09-23 02:19:25 | SBS HTTP 200 | 124928 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Enero/FP-1359-en2019.XLS
+2026-09-23 02:19:27 | AVISO: sin fila 'Día' en FP-1359-en2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:28 | SBS HTTP 200 | 71692 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Febrero/FP-1359-fe2019.XLS
+2026-09-23 02:19:29 | ERROR al abrir FP-1359-fe2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:19:30 | SBS HTTP 200 | 74135 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Marzo/FP-1359-ma2019.XLS
+2026-09-23 02:19:31 | ERROR al abrir FP-1359-ma2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:19:32 | SBS HTTP 200 | 124928 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Abril/FP-1359-ab2019.XLS
+2026-09-23 02:19:33 | AVISO: sin fila 'Día' en FP-1359-ab2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:34 | SBS HTTP 200 | 193024 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Mayo/FP-1359-my2019.XLS
+2026-09-23 02:19:36 | AVISO: sin fila 'Día' en FP-1359-my2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:36 | SBS HTTP 200 | 124416 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Junio/FP-1359-jn2019.XLS
+2026-09-23 02:19:38 | AVISO: sin fila 'Día' en FP-1359-jn2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:40 | SBS HTTP 200 | 220160 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Julio/FP-1359-jl2019.XLS
+2026-09-23 02:19:41 | AVISO: sin fila 'Día' en FP-1359-jl2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:42 | SBS HTTP 200 | 220672 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Agosto/FP-1359-ag2019.XLS
+2026-09-23 02:19:44 | AVISO: sin fila 'Día' en FP-1359-ag2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:45 | SBS HTTP 200 | 155136 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Setiembre/FP-1359-se2019.XLS
+2026-09-23 02:19:46 | AVISO: sin fila 'Día' en FP-1359-se2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:47 | SBS HTTP 200 | 160768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Octubre/FP-1359-oc2019.XLS
+2026-09-23 02:19:49 | AVISO: sin fila 'Día' en FP-1359-oc2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:49 | SBS HTTP 200 | 160256 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Noviembre/FP-1359-no2019.XLS
+2026-09-23 02:19:51 | AVISO: sin fila 'Día' en FP-1359-no2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:52 | SBS HTTP 200 | 160256 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2019/Diciembre/FP-1359-di2019.XLS
+2026-09-23 02:19:53 | AVISO: sin fila 'Día' en FP-1359-di2019.XLS hoja VC-Promedio 
+2026-09-23 02:19:54 | SBS HTTP 200 | 129024 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Enero/FP-1359-en2020.XLS
+2026-09-23 02:19:56 | AVISO: sin fila 'Día' en FP-1359-en2020.XLS hoja VC-Promedio 
+2026-09-23 02:19:57 | SBS HTTP 200 | 144384 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Febrero/FP-1359-fe2020.XLS
+2026-09-23 02:19:59 | AVISO: sin fila 'Día' en FP-1359-fe2020.XLS hoja VC-Promedio 
+2026-09-23 02:19:59 | SBS HTTP 200 | 154112 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Marzo/FP-1359-ma2020.XLS
+2026-09-23 02:20:01 | AVISO: sin fila 'Día' en FP-1359-ma2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:02 | SBS HTTP 200 | 152064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Abril/FP-1359-ab2020.XLS
+2026-09-23 02:20:03 | AVISO: sin fila 'Día' en FP-1359-ab2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:04 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Mayo/FP-1359-my2020.XLS
+2026-09-23 02:20:06 | AVISO: sin fila 'Día' en FP-1359-my2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:07 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Junio/FP-1359-jn2020.XLS
+2026-09-23 02:20:08 | AVISO: sin fila 'Día' en FP-1359-jn2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:09 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Julio/FP-1359-jl2020.XLS
+2026-09-23 02:20:10 | AVISO: sin fila 'Día' en FP-1359-jl2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:11 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Agosto/FP-1359-ag2020.XLS
+2026-09-23 02:20:13 | AVISO: sin fila 'Día' en FP-1359-ag2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:13 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Setiembre/FP-1359-se2020.XLS
+2026-09-23 02:20:15 | AVISO: sin fila 'Día' en FP-1359-se2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:16 | SBS HTTP 200 | 108544 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Octubre/FP-1359-oc2020.XLS
+2026-09-23 02:20:18 | AVISO: sin fila 'Día' en FP-1359-oc2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:19 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Noviembre/FP-1359-no2020.XLS
+2026-09-23 02:20:20 | AVISO: sin fila 'Día' en FP-1359-no2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:21 | SBS HTTP 200 | 119296 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2020/Diciembre/FP-1359-di2020.XLS
+2026-09-23 02:20:23 | AVISO: sin fila 'Día' en FP-1359-di2020.XLS hoja VC-Promedio 
+2026-09-23 02:20:24 | SBS HTTP 200 | 110592 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Enero/FP-1359-en2021.XLS
+2026-09-23 02:20:25 | AVISO: sin fila 'Día' en FP-1359-en2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:26 | SBS HTTP 200 | 111104 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Febrero/FP-1359-fe2021.XLS
+2026-09-23 02:20:28 | AVISO: sin fila 'Día' en FP-1359-fe2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:28 | SBS HTTP 200 | 31277 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Marzo/FP-1359-ma2021.XLS
+2026-09-23 02:20:29 | ERROR al abrir FP-1359-ma2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:20:30 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Abril/FP-1359-ab2021.XLS
+2026-09-23 02:20:31 | AVISO: sin fila 'Día' en FP-1359-ab2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:32 | SBS HTTP 200 | 111104 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Mayo/FP-1359-my2021.XLS
+2026-09-23 02:20:34 | AVISO: sin fila 'Día' en FP-1359-my2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:35 | SBS HTTP 200 | 120832 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Junio/FP-1359-jn2021.XLS
+2026-09-23 02:20:36 | AVISO: sin fila 'Día' en FP-1359-jn2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:37 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Julio/FP-1359-jl2021.XLS
+2026-09-23 02:20:39 | AVISO: sin fila 'Día' en FP-1359-jl2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:39 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Agosto/FP-1359-ag2021.XLS
+2026-09-23 02:20:41 | AVISO: sin fila 'Día' en FP-1359-ag2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:41 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Setiembre/FP-1359-se2021.XLS
+2026-09-23 02:20:43 | AVISO: sin fila 'Día' en FP-1359-se2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:44 | SBS HTTP 200 | 104448 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Octubre/FP-1359-oc2021.XLS
+2026-09-23 02:20:45 | AVISO: sin fila 'Día' en FP-1359-oc2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:46 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Noviembre/FP-1359-no2021.XLS
+2026-09-23 02:20:48 | AVISO: sin fila 'Día' en FP-1359-no2021.XLS hoja VC-Promedio 
+2026-09-23 02:20:48 | SBS HTTP 200 | 30552 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2021/Diciembre/FP-1359-di2021.XLS
+2026-09-23 02:20:50 | ERROR al abrir FP-1359-di2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:20:51 | SBS HTTP 200 | 111104 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Enero/FP-1359-en2022.XLS
+2026-09-23 02:20:52 | AVISO: sin fila 'Día' en FP-1359-en2022.XLS hoja VC-Promedio 
+2026-09-23 02:20:53 | SBS HTTP 200 | 110592 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Febrero/FP-1359-fe2022.XLS
+2026-09-23 02:20:55 | AVISO: sin fila 'Día' en FP-1359-fe2022.XLS hoja VC-Promedio 
+2026-09-23 02:20:55 | SBS HTTP 200 | 113152 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Marzo/FP-1359-ma2022.XLS
+2026-09-23 02:20:57 | AVISO: sin fila 'Día' en FP-1359-ma2022.XLS hoja VC-Promedio 
+2026-09-23 02:20:57 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Abril/FP-1359-ab2022.XLS
+2026-09-23 02:20:59 | AVISO: sin fila 'Día' en FP-1359-ab2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:00 | SBS HTTP 200 | 112128 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Mayo/FP-1359-my2022.XLS
+2026-09-23 02:21:01 | AVISO: sin fila 'Día' en FP-1359-my2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:01 | SBS HTTP 200 | 112128 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Junio/FP-1359-jn2022.XLS
+2026-09-23 02:21:03 | AVISO: sin fila 'Día' en FP-1359-jn2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:04 | SBS HTTP 200 | 112128 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Julio/FP-1359-jl2022.XLS
+2026-09-23 02:21:05 | AVISO: sin fila 'Día' en FP-1359-jl2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:06 | SBS HTTP 200 | 112640 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Agosto/FP-1359-ag2022.XLS
+2026-09-23 02:21:08 | AVISO: sin fila 'Día' en FP-1359-ag2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:08 | SBS HTTP 200 | 111616 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Setiembre/FP-1359-se2022.XLS
+2026-09-23 02:21:10 | AVISO: sin fila 'Día' en FP-1359-se2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:10 | SBS HTTP 200 | 112128 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Octubre/FP-1359-oc2022.XLS
+2026-09-23 02:21:12 | AVISO: sin fila 'Día' en FP-1359-oc2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:12 | SBS HTTP 200 | 113152 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Noviembre/FP-1359-no2022.XLS
+2026-09-23 02:21:14 | AVISO: sin fila 'Día' en FP-1359-no2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:14 | SBS HTTP 200 | 113152 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2022/Diciembre/FP-1359-di2022.XLS
+2026-09-23 02:21:16 | AVISO: sin fila 'Día' en FP-1359-di2022.XLS hoja VC-Promedio 
+2026-09-23 02:21:17 | SBS HTTP 200 | 89088 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Enero/FP-1359-en2023.XLS
+2026-09-23 02:21:20 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Febrero/FP-1359-fe2023.XLS
+2026-09-23 02:21:22 | SBS HTTP 200 | 89088 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Marzo/FP-1359-ma2023.XLS
+2026-09-23 02:21:24 | SBS HTTP 200 | 88576 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Abril/FP-1359-ab2023.XLS
+2026-09-23 02:21:26 | SBS HTTP 200 | 96768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Mayo/FP-1359-my2023.XLS
+2026-09-23 02:21:28 | SBS HTTP 200 | 96768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Junio/FP-1359-jn2023.XLS
+2026-09-23 02:21:30 | SBS HTTP 200 | 88576 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Julio/FP-1359-jl2023.XLS
+2026-09-23 02:21:33 | SBS HTTP 200 | 96768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Agosto/FP-1359-ag2023.XLS
+2026-09-23 02:21:35 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Setiembre/FP-1359-se2023.XLS
+2026-09-23 02:21:37 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Octubre/FP-1359-oc2023.XLS
+2026-09-23 02:21:39 | SBS HTTP 200 | 96768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Noviembre/FP-1359-no2023.XLS
+2026-09-23 02:21:41 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2023/Diciembre/FP-1359-di2023.XLS
+2026-09-23 02:21:44 | SBS HTTP 200 | 89088 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Enero/FP-1359-en2024.XLS
+2026-09-23 02:21:46 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Febrero/FP-1359-fe2024.XLS
+2026-09-23 02:21:49 | SBS HTTP 200 | 88064 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Marzo/FP-1359-ma2024.XLS
+2026-09-23 02:21:51 | SBS HTTP 200 | 96256 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Abril/FP-1359-ab2024.XLS
+2026-09-23 02:21:53 | SBS HTTP 200 | 96768 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Mayo/FP-1359-my2024.XLS
+2026-09-23 02:21:55 | SBS HTTP 200 | 92160 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Junio/FP-1359-jn2024.XLS
+2026-09-23 02:21:58 | SBS HTTP 200 | 88576 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Julio/FP-1359-jl2024.XLS
+2026-09-23 02:22:00 | SBS HTTP 200 | 95232 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Agosto/FP-1359-ag2024.XLS
+2026-09-23 02:22:02 | SBS HTTP 200 | 92672 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Setiembre/FP-1359-se2024.XLS
+2026-09-23 02:22:04 | SBS HTTP 200 | 95232 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Octubre/FP-1359-oc2024.XLS
+2026-09-23 02:22:07 | SBS HTTP 200 | 88576 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Noviembre/FP-1359-no2024.XLS
+2026-09-23 02:22:09 | SBS HTTP 200 | 87552 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2024/Diciembre/FP-1359-di2024.XLS
+2026-09-23 02:22:11 | SBS HTTP 200 | 88576 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Enero/FP-1359-en2025.XLS
+2026-09-23 02:22:13 | SBS HTTP 200 | 92160 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Febrero/FP-1359-fe2025.XLS
+2026-09-23 02:22:15 | SBS HTTP 200 | 84480 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Marzo/FP-1359-ma2025.XLS
+2026-09-23 02:22:17 | SBS HTTP 200 | 84992 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Abril/FP-1359-ab2025.XLS
+2026-09-23 02:22:19 | SBS HTTP 200 | 83968 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Mayo/FP-1359-my2025.XLS
+2026-09-23 02:22:21 | SBS HTTP 200 | 84480 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Junio/FP-1359-jn2025.XLS
+2026-09-23 02:22:23 | SBS HTTP 200 | 84480 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Julio/FP-1359-jl2025.XLS
+2026-09-23 02:22:26 | SBS HTTP 200 | 86528 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Agosto/FP-1359-ag2025.XLS
+2026-09-23 02:22:28 | SBS HTTP 200 | 86528 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Setiembre/FP-1359-se2025.XLS
+2026-09-23 02:22:30 | SBS HTTP 200 | 87040 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Octubre/FP-1359-oc2025.XLS
+2026-09-23 02:22:32 | SBS HTTP 200 | 86016 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Noviembre/FP-1359-no2025.XLS
+2026-09-23 02:22:34 | SBS HTTP 200 | 86016 bytes | https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Diciembre/FP-1359-di2025.XLS
+2026-09-23 02:22:36 | Archivos disponibles y descargados: 132
+2026-09-23 02:22:36 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 1088 filas
+2026-09-23 02:22:36 | Rango de fechas: 2025-07-01 a 2025-12-31
+2026-09-23 02:22:36 | Fin de 02_scraping_web.py
+2026-09-23 02:35:09 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Enero/FP-1359-en2010.XLS
+2026-09-23 02:35:11 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Febrero/FP-1359-fe2010.XLS
+2026-09-23 02:35:13 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Marzo/FP-1359-ma2010.XLS
+2026-09-23 02:35:14 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Abril/FP-1359-ab2010.XLS
+2026-09-23 02:35:16 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Mayo/FP-1359-my2010.XLS
+2026-09-23 02:35:18 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Junio/FP-1359-jn2010.XLS
+2026-09-23 02:35:20 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Julio/FP-1359-jl2010.XLS
+2026-09-23 02:35:21 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Agosto/FP-1359-ag2010.XLS
+2026-09-23 02:35:23 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Setiembre/FP-1359-se2010.XLS
+2026-09-23 02:35:25 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Octubre/FP-1359-oc2010.XLS
+2026-09-23 02:35:26 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Noviembre/FP-1359-no2010.XLS
+2026-09-23 02:35:28 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2010/Diciembre/FP-1359-di2010.XLS
+2026-09-23 02:35:30 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Enero/FP-1359-en2011.XLS
+2026-09-23 02:35:31 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Febrero/FP-1359-fe2011.XLS
+2026-09-23 02:35:33 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Marzo/FP-1359-ma2011.XLS
+2026-09-23 02:35:35 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Abril/FP-1359-ab2011.XLS
+2026-09-23 02:35:37 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Mayo/FP-1359-my2011.XLS
+2026-09-23 02:35:39 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Junio/FP-1359-jn2011.XLS
+2026-09-23 02:35:40 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Julio/FP-1359-jl2011.XLS
+2026-09-23 02:35:42 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Agosto/FP-1359-ag2011.XLS
+2026-09-23 02:35:44 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Setiembre/FP-1359-se2011.XLS
+2026-09-23 02:35:46 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Octubre/FP-1359-oc2011.XLS
+2026-09-23 02:35:47 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Noviembre/FP-1359-no2011.XLS
+2026-09-23 02:35:49 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2011/Diciembre/FP-1359-di2011.XLS
+2026-09-23 02:35:51 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Enero/FP-1359-en2012.XLS
+2026-09-23 02:35:52 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Febrero/FP-1359-fe2012.XLS
+2026-09-23 02:35:55 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Marzo/FP-1359-ma2012.XLS
+2026-09-23 02:35:56 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Abril/FP-1359-ab2012.XLS
+2026-09-23 02:35:58 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Mayo/FP-1359-my2012.XLS
+2026-09-23 02:36:00 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Junio/FP-1359-jn2012.XLS
+2026-09-23 02:36:01 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Julio/FP-1359-jl2012.XLS
+2026-09-23 02:36:03 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Agosto/FP-1359-ag2012.XLS
+2026-09-23 02:36:05 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Setiembre/FP-1359-se2012.XLS
+2026-09-23 02:36:06 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Octubre/FP-1359-oc2012.XLS
+2026-09-23 02:36:08 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Noviembre/FP-1359-no2012.XLS
+2026-09-23 02:36:11 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2012/Diciembre/FP-1359-di2012.XLS
+2026-09-23 02:36:12 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Enero/FP-1359-en2013.XLS
+2026-09-23 02:36:14 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Febrero/FP-1359-fe2013.XLS
+2026-09-23 02:36:16 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Marzo/FP-1359-ma2013.XLS
+2026-09-23 02:36:17 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Abril/FP-1359-ab2013.XLS
+2026-09-23 02:36:19 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Mayo/FP-1359-my2013.XLS
+2026-09-23 02:36:21 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Junio/FP-1359-jn2013.XLS
+2026-09-23 02:36:22 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Julio/FP-1359-jl2013.XLS
+2026-09-23 02:36:24 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Agosto/FP-1359-ag2013.XLS
+2026-09-23 02:36:26 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Setiembre/FP-1359-se2013.XLS
+2026-09-23 02:36:28 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Octubre/FP-1359-oc2013.XLS
+2026-09-23 02:36:29 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Noviembre/FP-1359-no2013.XLS
+2026-09-23 02:36:31 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2013/Diciembre/FP-1359-di2013.XLS
+2026-09-23 02:36:33 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Enero/FP-1359-en2014.XLS
+2026-09-23 02:36:35 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Febrero/FP-1359-fe2014.XLS
+2026-09-23 02:36:36 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Marzo/FP-1359-ma2014.XLS
+2026-09-23 02:36:38 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Abril/FP-1359-ab2014.XLS
+2026-09-23 02:36:40 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Mayo/FP-1359-my2014.XLS
+2026-09-23 02:36:41 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Junio/FP-1359-jn2014.XLS
+2026-09-23 02:36:43 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Julio/FP-1359-jl2014.XLS
+2026-09-23 02:36:45 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Agosto/FP-1359-ag2014.XLS
+2026-09-23 02:36:47 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Setiembre/FP-1359-se2014.XLS
+2026-09-23 02:36:49 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Octubre/FP-1359-oc2014.XLS
+2026-09-23 02:36:51 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Noviembre/FP-1359-no2014.XLS
+2026-09-23 02:36:52 | SBS HTTP 404 | 0 bytes | no disponible | https://intranet2.sbs.gob.pe/estadistica/financiera/2014/Diciembre/FP-1359-di2014.XLS
+2026-09-23 02:36:55 | AVISO: sin fila 'Día' en FP-1359-en2015.XLS hoja VC-Promedio 
+2026-09-23 02:36:57 | AVISO: sin fila 'Día' en FP-1359-fe2015.XLS hoja VC-Promedio 
+2026-09-23 02:36:59 | AVISO: sin fila 'Día' en FP-1359-ma2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:00 | AVISO: sin fila 'Día' en FP-1359-ab2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:02 | AVISO: sin fila 'Día' en FP-1359-my2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:03 | AVISO: sin fila 'Día' en FP-1359-jn2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:05 | AVISO: sin fila 'Día' en FP-1359-jl2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:07 | AVISO: sin fila 'Día' en FP-1359-ag2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:09 | AVISO: sin fila 'Día' en FP-1359-se2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:10 | AVISO: sin fila 'Día' en FP-1359-oc2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:12 | AVISO: sin fila 'Día' en FP-1359-no2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:13 | AVISO: sin fila 'Día' en FP-1359-di2015.XLS hoja VC-Promedio 
+2026-09-23 02:37:15 | AVISO: sin fila 'Día' en FP-1359-en2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:17 | AVISO: sin fila 'Día' en FP-1359-fe2016.XLS hoja VC-Promedio
+2026-09-23 02:37:18 | AVISO: sin fila 'Día' en FP-1359-ma2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:20 | AVISO: sin fila 'Día' en FP-1359-ab2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:22 | AVISO: sin fila 'Día' en FP-1359-my2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:23 | AVISO: sin fila 'Día' en FP-1359-jn2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:25 | AVISO: sin fila 'Día' en FP-1359-jl2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:27 | AVISO: sin fila 'Día' en FP-1359-ag2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:28 | AVISO: sin fila 'Día' en FP-1359-se2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:30 | AVISO: sin fila 'Día' en FP-1359-oc2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:32 | AVISO: sin fila 'Día' en FP-1359-no2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:33 | AVISO: sin fila 'Día' en FP-1359-di2016.XLS hoja VC-Promedio 
+2026-09-23 02:37:35 | AVISO: sin fila 'Día' en FP-1359-en2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:37 | AVISO: sin fila 'Día' en FP-1359-fe2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:38 | AVISO: sin fila 'Día' en FP-1359-ma2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:40 | AVISO: sin fila 'Día' en FP-1359-ab2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:42 | AVISO: sin fila 'Día' en FP-1359-my2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:43 | AVISO: sin fila 'Día' en FP-1359-jn2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:45 | AVISO: sin fila 'Día' en FP-1359-jl2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:47 | AVISO: sin fila 'Día' en FP-1359-ag2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:49 | AVISO: sin fila 'Día' en FP-1359-se2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:50 | AVISO: sin fila 'Día' en FP-1359-oc2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:52 | AVISO: sin fila 'Día' en FP-1359-no2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:53 | AVISO: sin fila 'Día' en FP-1359-di2017.XLS hoja VC-Promedio 
+2026-09-23 02:37:55 | AVISO: sin fila 'Día' en FP-1359-en2018.XLS hoja VC-Promedio 
+2026-09-23 02:37:57 | AVISO: sin fila 'Día' en FP-1359-fe2018.XLS hoja VC-Promedio 
+2026-09-23 02:37:58 | ERROR al abrir FP-1359-ma2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:38:00 | AVISO: sin fila 'Día' en FP-1359-ab2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:02 | ERROR al abrir FP-1359-my2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:38:03 | AVISO: sin fila 'Día' en FP-1359-jn2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:05 | AVISO: sin fila 'Día' en FP-1359-jl2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:07 | AVISO: sin fila 'Día' en FP-1359-ag2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:08 | AVISO: sin fila 'Día' en FP-1359-se2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:10 | AVISO: sin fila 'Día' en FP-1359-oc2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:11 | AVISO: sin fila 'Día' en FP-1359-no2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:13 | AVISO: sin fila 'Día' en FP-1359-di2018.XLS hoja VC-Promedio 
+2026-09-23 02:38:15 | AVISO: sin fila 'Día' en FP-1359-en2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:16 | ERROR al abrir FP-1359-fe2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:38:18 | ERROR al abrir FP-1359-ma2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:38:20 | AVISO: sin fila 'Día' en FP-1359-ab2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:21 | AVISO: sin fila 'Día' en FP-1359-my2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:23 | AVISO: sin fila 'Día' en FP-1359-jn2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:25 | AVISO: sin fila 'Día' en FP-1359-jl2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:26 | AVISO: sin fila 'Día' en FP-1359-ag2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:28 | AVISO: sin fila 'Día' en FP-1359-se2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:30 | AVISO: sin fila 'Día' en FP-1359-oc2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:31 | AVISO: sin fila 'Día' en FP-1359-no2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:33 | AVISO: sin fila 'Día' en FP-1359-di2019.XLS hoja VC-Promedio 
+2026-09-23 02:38:35 | AVISO: sin fila 'Día' en FP-1359-en2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:36 | AVISO: sin fila 'Día' en FP-1359-fe2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:38 | AVISO: sin fila 'Día' en FP-1359-ma2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:40 | AVISO: sin fila 'Día' en FP-1359-ab2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:41 | AVISO: sin fila 'Día' en FP-1359-my2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:43 | AVISO: sin fila 'Día' en FP-1359-jn2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:44 | AVISO: sin fila 'Día' en FP-1359-jl2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:46 | AVISO: sin fila 'Día' en FP-1359-ag2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:48 | AVISO: sin fila 'Día' en FP-1359-se2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:49 | AVISO: sin fila 'Día' en FP-1359-oc2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:51 | AVISO: sin fila 'Día' en FP-1359-no2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:52 | AVISO: sin fila 'Día' en FP-1359-di2020.XLS hoja VC-Promedio 
+2026-09-23 02:38:54 | AVISO: sin fila 'Día' en FP-1359-en2021.XLS hoja VC-Promedio 
+2026-09-23 02:38:56 | AVISO: sin fila 'Día' en FP-1359-fe2021.XLS hoja VC-Promedio 
+2026-09-23 02:38:57 | ERROR al abrir FP-1359-ma2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:38:59 | AVISO: sin fila 'Día' en FP-1359-ab2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:00 | AVISO: sin fila 'Día' en FP-1359-my2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:02 | AVISO: sin fila 'Día' en FP-1359-jn2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:03 | AVISO: sin fila 'Día' en FP-1359-jl2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:05 | AVISO: sin fila 'Día' en FP-1359-ag2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:07 | AVISO: sin fila 'Día' en FP-1359-se2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:08 | AVISO: sin fila 'Día' en FP-1359-oc2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:10 | AVISO: sin fila 'Día' en FP-1359-no2021.XLS hoja VC-Promedio 
+2026-09-23 02:39:11 | ERROR al abrir FP-1359-di2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:39:13 | AVISO: sin fila 'Día' en FP-1359-en2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:14 | AVISO: sin fila 'Día' en FP-1359-fe2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:16 | AVISO: sin fila 'Día' en FP-1359-ma2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:18 | AVISO: sin fila 'Día' en FP-1359-ab2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:19 | AVISO: sin fila 'Día' en FP-1359-my2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:21 | AVISO: sin fila 'Día' en FP-1359-jn2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:22 | AVISO: sin fila 'Día' en FP-1359-jl2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:24 | AVISO: sin fila 'Día' en FP-1359-ag2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:26 | AVISO: sin fila 'Día' en FP-1359-se2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:27 | AVISO: sin fila 'Día' en FP-1359-oc2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:29 | AVISO: sin fila 'Día' en FP-1359-no2022.XLS hoja VC-Promedio 
+2026-09-23 02:39:30 | AVISO: sin fila 'Día' en FP-1359-di2022.XLS hoja VC-Promedio 
+2026-09-23 02:40:27 | Archivos disponibles y descargados: 132
+2026-09-23 02:40:27 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 1088 filas
+2026-09-23 02:40:27 | Rango de fechas: 2025-07-01 a 2025-12-31
+2026-09-23 02:40:27 | Fin de 02_scraping_web.py
+2026-09-23 02:47:47 | ERROR al abrir FP-1359-ma2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:47:50 | ERROR al abrir FP-1359-my2018.XLS: Excel xlsx file; not supported
+2026-09-23 02:48:05 | ERROR al abrir FP-1359-fe2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:48:07 | ERROR al abrir FP-1359-ma2019.XLS: Excel xlsx file; not supported
+2026-09-23 02:48:46 | ERROR al abrir FP-1359-ma2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:49:01 | ERROR al abrir FP-1359-di2021.XLS: Excel xlsx file; not supported
+2026-09-23 02:50:18 | Archivos disponibles y descargados: 132
+2026-09-23 02:50:18 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 42248 filas
+2026-09-23 02:50:18 | Rango de fechas: 2015-01-02 a 2025-12-31
+2026-09-23 02:50:18 | Fin de 02_scraping_web.py
