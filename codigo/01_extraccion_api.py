@@ -1,13 +1,14 @@
 # Autor: Andy Donato Mendoza Flores
 # Código de matrícula: 2024200509B
 # Tema 25 del temario: Renta vitalicia frente a retiro programado en el SPP: valuación de una anualidad
-# Fecha de extracción: 2026-09-20
+# Fecha de extracción: 2026-09-23
 
 """
 01_extraccion_api.py
-Descarga por API las series del Sistema Privado de Pensiones (BCRPData)
-y la esperanza de vida del Perú (Banco Mundial). Guarda los datos crudos
-tal como llegan y registra cada consulta en log_ejecucion.txt.
+Descarga por API las series del Sistema Privado de Pensiones y la tasa de
+descuento (BCRPData), y la esperanza de vida del Perú (Banco Mundial).
+Cada serie se solicita por separado: la API puede devolver las series en
+orden distinto al solicitado, lo que desalinearía los valores.
 Ejecutar desde la carpeta raíz del proyecto:  python codigo/01_extraccion_api.py
 """
 
@@ -30,7 +31,8 @@ FECHA_INICIO = "2010-1"   # enero de 2010 (formato año-mes del BCRP)
 FECHA_CORTE = "2025-12"   # diciembre de 2025
 CODIGO = "2024200509B"
 
-# Series mensuales del BCRP (fuente original: SBS), una por AFP
+# Series mensuales del BCRP. Las de AFP tienen como fuente original a la SBS;
+# la del bono, al MEF.
 SERIES_BCRP = {
     "PN01168MM": ("Habitat", "valor_fondo_mill_soles"),
     "PN01169MM": ("Integra", "valor_fondo_mill_soles"),
@@ -44,6 +46,9 @@ SERIES_BCRP = {
     "PN01180MM": ("Integra", "rentab_real_12m"),
     "PN01181MM": ("Prima", "rentab_real_12m"),
     "PN01182MM": ("Profuturo", "rentab_real_12m"),
+    # Tasa de descuento: rendimiento del bono soberano a 10 años en soles.
+    # No pertenece a ninguna AFP, por eso se etiqueta como "Mercado".
+    "PD31895MM": ("Mercado", "rend_bono_10a_soles"),
 }
 
 # Indicador del Banco Mundial: esperanza de vida al nacer, total (años)
@@ -64,7 +69,7 @@ ARCHIVO_LOG = Path("log_ejecucion.txt")
 
 
 def escribir_log(mensaje):
-    """Escribe una línea con fecha y hora en el log y la muestra en pantalla."""
+    """Escribe una línea con fecha y hora de Lima en el log y en pantalla."""
     linea = f"{datetime.now(ZoneInfo('America/Lima')):%Y-%m-%d %H:%M:%S} | {mensaje}"
     print(linea)
     with open(ARCHIVO_LOG, "a", encoding="utf-8") as f:
@@ -72,45 +77,45 @@ def escribir_log(mensaje):
 
 
 # ---------------------------------------------------------------
-# Bloque 4. Extracción del BCRP (máximo 10 códigos por consulta)
+# Bloque 4. Extracción del BCRP, una serie por consulta
+# Se guarda además el nombre oficial que la API devuelve para cada código,
+# como evidencia de que el dato corresponde a la serie declarada.
 # ---------------------------------------------------------------
-def descargar_bcrp(codigos):
+def descargar_serie(codigo):
     url = (
         "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/"
-        f"{'-'.join(codigos)}/json/{FECHA_INICIO}/{FECHA_CORTE}/esp"
+        f"{codigo}/json/{FECHA_INICIO}/{FECHA_CORTE}/esp"
     )
     try:
         r = requests.get(url, headers=HEADERS, timeout=60)
     except requests.RequestException as e:
-        escribir_log(f"BCRP ERROR de conexión: {e}")
+        escribir_log(f"BCRP ERROR de conexión ({codigo}): {e}")
         return None
     if r.status_code != 200:
-        escribir_log(f"BCRP HTTP {r.status_code} | {url}")
+        escribir_log(f"BCRP HTTP {r.status_code} | {codigo} | {url}")
         return None
     datos = r.json()
-    escribir_log(f"BCRP HTTP {r.status_code} | {len(datos.get('periods', []))} periodos | {url}")
+    nombre_api = datos["config"]["series"][0]["name"]
+    escribir_log(f"BCRP HTTP {r.status_code} | {codigo} | {len(datos['periods'])} periodos | {nombre_api}")
     return datos
 
 
-codigos = list(SERIES_BCRP.keys())
-grupos = [codigos[i:i + 10] for i in range(0, len(codigos), 10)]
-
 filas = []
-for grupo in grupos:
-    datos = descargar_bcrp(grupo)
+for codigo, (afp, variable) in SERIES_BCRP.items():
+    datos = descargar_serie(codigo)
     time.sleep(PAUSA_SEG)
     if datos is None:
         continue
+    nombre_api = datos["config"]["series"][0]["name"]
     for periodo in datos["periods"]:
-        for codigo, valor in zip(grupo, periodo["values"]):
-            afp, variable = SERIES_BCRP[codigo]
-            filas.append({
-                "periodo": periodo["name"],
-                "codigo_serie": codigo,
-                "afp": afp,
-                "variable": variable,
-                "valor": valor,
-            })
+        filas.append({
+            "periodo": periodo["name"],
+            "codigo_serie": codigo,
+            "nombre_serie_api": nombre_api,
+            "afp": afp,
+            "variable": variable,
+            "valor": periodo["values"][0],
+        })
 
 crudo_bcrp = pd.DataFrame(filas)
 ruta_bcrp = CARPETA_CRUDOS / f"datos_crudos_bcrp_{CODIGO}.csv"
@@ -119,8 +124,6 @@ escribir_log(f"Guardado {ruta_bcrp} con {len(crudo_bcrp)} filas")
 
 # ---------------------------------------------------------------
 # Bloque 5. Extracción del Banco Mundial (con reintentos)
-# Esta API a veces tarda en responder, por eso se intenta
-# hasta 3 veces, esperando 10 segundos entre cada intento.
 # ---------------------------------------------------------------
 url_bm = (
     f"https://api.worldbank.org/v2/country/PER/indicator/{INDICADOR_BM}"
@@ -133,13 +136,12 @@ for intento in range(1, 4):
         escribir_log(f"Banco Mundial intento {intento} HTTP {r.status_code} | {url_bm}")
         r.raise_for_status()
         respuesta = r.json()
-        break  # si funcionó, sale del ciclo
+        break
     except (requests.RequestException, ValueError) as e:
         escribir_log(f"Banco Mundial intento {intento} ERROR: {e}")
         time.sleep(10)
 
 if respuesta is not None:
-    # Se guarda el JSON original como evidencia primaria
     with open(CARPETA_CRUDOS / f"datos_crudos_bm_{CODIGO}.json", "w", encoding="utf-8") as f:
         json.dump(respuesta, f, ensure_ascii=False, indent=2)
     registros = respuesta[1] if len(respuesta) > 1 and respuesta[1] else []
