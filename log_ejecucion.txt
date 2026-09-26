@@ -481,3 +481,154 @@
 2026-09-23 02:50:18 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 42248 filas
 2026-09-23 02:50:18 | Rango de fechas: 2015-01-02 a 2025-12-31
 2026-09-23 02:50:18 | Fin de 02_scraping_web.py
+2026-09-23 03:46:16 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-23 03:46:16 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-23 03:46:16 | SBS mensual: 1956 filas (126 meses)
+2026-09-23 03:46:16 | Base unida: 1956 filas, 10 columnas
+2026-09-23 03:46:16 | Celdas imputadas por interpolación lineal: 4
+2026-09-23 03:46:16 | Celdas que siguen vacías (ausencia en la fuente): 192
+2026-09-23 03:46:16 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 1956 filas y 11 columnas
+2026-09-23 03:46:16 | Periodo: 2015-01 a 2025-12
+2026-09-23 03:46:16 | SHA-256 del archivo procesado: d55206dd84bdbe2f8c5d4bfd12c6ca54fe81591c00cce85ca751726fbd1d6f23
+2026-09-23 03:46:16 | Fin de 03_limpieza_datos.py
+2026-09-23 03:57:43 | AVISO: FP-1359-ma2018.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 03:57:47 | AVISO: FP-1359-my2018.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 03:58:02 | AVISO: FP-1359-fe2019.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 03:58:04 | AVISO: FP-1359-ma2019.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 03:58:45 | AVISO: FP-1359-ma2021.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 03:58:59 | AVISO: FP-1359-di2021.XLS es xlsx pese a su extensión .XLS; leído con openpyxl
+2026-09-23 04:00:17 | Archivos disponibles y descargados: 132
+2026-09-23 04:00:17 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 44360 filas
+2026-09-23 04:00:17 | Rango de fechas: 2015-01-02 a 2025-12-31
+2026-09-23 04:00:17 | Fin de 02_scraping_web.py
+2026-09-23 04:03:38 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-23 04:03:38 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-23 04:03:38 | SBS mensual: 2052 filas (132 meses)
+2026-09-23 04:03:38 | Base unida: 2052 filas, 10 columnas
+2026-09-23 04:03:38 | Celdas imputadas por interpolación lineal: 4
+2026-09-23 04:03:38 | Celdas que siguen vacías (ausencia en la fuente): 192
+2026-09-23 04:03:38 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 2052 filas y 11 columnas
+2026-09-23 04:03:38 | Periodo: 2015-01 a 2025-12
+2026-09-23 04:03:38 | SHA-256 del archivo procesado: 850681d72d3af5c21a9094b6f78fab60ab7a5705a4c4edc79d33675baa5b38ca
+2026-09-23 04:03:38 | Fin de 03_limpieza_datos.py
+2026-09-23 04:13:17 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01168MM-PN01169MM-PN01170MM-PN01171MM-PN01174MM-PN01175MM-PN01176MM-PN01177MM-PN01179MM-PN01180MM/json/2010-1/2025-12/esp
+2026-09-23 04:13:19 | BCRP HTTP 200 | 192 periodos | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01181MM-PN01182MM-PD31895MM/json/2010-1/2025-12/esp
+2026-09-23 04:13:20 | Guardado datos_crudos/datos_crudos_bcrp_2024200509B.csv con 2496 filas
+2026-09-23 04:13:20 | Banco Mundial intento 1 HTTP 200 | https://api.worldbank.org/v2/country/PER/indicator/SP.DYN.LE00.IN?format=json&date=2010:2025&per_page=100
+2026-09-23 04:13:21 | Guardado datos_crudos/datos_crudos_bm_2024200509B.csv con 16 filas
+2026-09-23 04:13:21 | Fin de 01_extraccion_api.py
+2026-09-23 04:16:06 | Tasa de descuento: 192 meses
+2026-09-23 04:16:06 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-23 04:16:06 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-23 04:16:06 | SBS mensual: 2052 filas (132 meses)
+2026-09-23 04:16:06 | Base unida: 2052 filas, 11 columnas
+2026-09-23 04:16:07 | Celdas imputadas por interpolación lineal: 4
+2026-09-23 04:16:07 | Celdas que siguen vacías (ausencia en la fuente): 192
+2026-09-23 04:16:07 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 2052 filas y 12 columnas
+2026-09-23 04:16:07 | Periodo: 2015-01 a 2025-12
+2026-09-23 04:16:07 | SHA-256 del archivo procesado: e0be33a434966b57a752fed7cef5d2d7b44fd5966a4b106d1a453b1c07c68cf0
+2026-09-23 04:16:07 | Fin de 03_limpieza_datos.py
+2026-09-23 04:21:10 | BCRP HTTP 200 | PN01168MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Habitat (millones S/)
+2026-09-23 04:21:12 | BCRP HTTP 200 | PN01169MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Integra (millones S/)
+2026-09-23 04:21:14 | BCRP HTTP 200 | PN01170MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Prima (millones S/)
+2026-09-23 04:21:16 | BCRP HTTP 200 | PN01171MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Profuturo (millones S/)
+2026-09-23 04:21:18 | BCRP HTTP 200 | PN01174MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Habitat (miles)
+2026-09-23 04:21:20 | BCRP HTTP 200 | PN01175MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Integra (miles)
+2026-09-23 04:21:22 | BCRP HTTP 200 | PN01176MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Prima (miles)
+2026-09-23 04:21:24 | BCRP HTTP 200 | PN01177MM | 191 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Profuturo (miles)
+2026-09-23 04:21:25 | BCRP HTTP 200 | PN01179MM | 176 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Habitat
+2026-09-23 04:21:27 | BCRP HTTP 200 | PN01180MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Integra
+2026-09-23 04:21:29 | BCRP HTTP 200 | PN01181MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Prima
+2026-09-23 04:21:31 | BCRP HTTP 200 | PN01182MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Profuturo
+2026-09-23 04:21:33 | BCRP HTTP 200 | PD31895MM | 192 periodos | Tasas de interés de bonos del gobierno peruano - Rendimiento del Bono del gobierno peruano a 10 años (en S/)
+2026-09-23 04:21:34 | Guardado datos_crudos/datos_crudos_bcrp_2024200509B.csv con 2479 filas
+2026-09-23 04:21:35 | Banco Mundial intento 1 HTTP 200 | https://api.worldbank.org/v2/country/PER/indicator/SP.DYN.LE00.IN?format=json&date=2010:2025&per_page=100
+2026-09-23 04:21:35 | Guardado datos_crudos/datos_crudos_bm_2024200509B.csv con 16 filas
+2026-09-23 04:21:35 | Fin de 01_extraccion_api.py
+2026-09-23 04:23:52 | Tasa de descuento: 192 meses
+2026-09-23 04:23:52 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-23 04:23:52 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-23 04:23:52 | SBS mensual: 2052 filas (132 meses)
+2026-09-23 04:23:52 | Base unida: 2052 filas, 11 columnas
+2026-09-23 04:23:53 | Celdas imputadas por interpolación lineal: 4
+2026-09-23 04:23:53 | Celdas que siguen vacías (ausencia en la fuente): 192
+2026-09-23 04:23:53 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 2052 filas y 12 columnas
+2026-09-23 04:23:53 | Periodo: 2015-01 a 2025-12
+2026-09-23 04:23:53 | SHA-256 del archivo procesado: 7e007b3327296e834491b84d166fee17f2f023074f0e2289bfd44895629b7161
+2026-09-23 04:23:53 | Fin de 03_limpieza_datos.py
+2026-09-25 20:08:53 | SBS HTTP 200 | 231259 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Enero/FP-1231-en2010.ZIP
+2026-09-25 20:08:56 | SBS HTTP 200 | 235071 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Febrero/FP-1231-fe2010.ZIP
+2026-09-25 20:08:59 | SBS HTTP 200 | 260456 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Marzo/FP-1231-ma2010.ZIP
+2026-09-25 20:09:02 | SBS HTTP 200 | 271223 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Abril/FP-1231-ab2010.ZIP
+2026-09-25 20:09:05 | SBS HTTP 200 | 235785 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Mayo/FP-1231-my2010.ZIP
+2026-09-25 20:09:08 | SBS HTTP 200 | 263054 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Junio/FP-1231-jn2010.ZIP
+2026-09-25 20:09:11 | SBS HTTP 200 | 238367 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Julio/FP-1231-jl2010.ZIP
+2026-09-25 20:09:14 | SBS HTTP 200 | 287109 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Agosto/FP-1231-ag2010.ZIP
+2026-09-25 20:09:17 | SBS HTTP 200 | 272574 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Setiembre/FP-1231-se2010.ZIP
+2026-09-25 20:09:21 | SBS HTTP 200 | 247021 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Octubre/FP-1231-oc2010.ZIP
+2026-09-25 20:09:24 | SBS HTTP 200 | 246251 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Noviembre/FP-1231-no2010.ZIP
+2026-09-25 20:09:27 | SBS HTTP 200 | 324593 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2010/Diciembre/FP-1231-di2010.ZIP
+2026-09-25 20:09:30 | SBS HTTP 200 | 251284 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Enero/FP-1231-en2011.ZIP
+2026-09-25 20:09:33 | SBS HTTP 200 | 251723 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Febrero/FP-1231-fe2011.ZIP
+2026-09-25 20:09:36 | SBS HTTP 200 | 274830 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Marzo/FP-1231-ma2011.ZIP
+2026-09-25 20:09:39 | SBS HTTP 200 | 281300 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Abril/FP-1231-ab2011.ZIP
+2026-09-25 20:09:42 | SBS HTTP 200 | 229253 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Mayo/FP-1231-my2011.ZIP
+2026-09-25 20:09:44 | SBS HTTP 200 | 255572 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Junio/FP-1231-jn2011.ZIP
+2026-09-25 20:09:47 | SBS HTTP 200 | 229640 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Julio/FP-1231-jl2011.ZIP
+2026-09-25 20:09:50 | SBS HTTP 200 | 286702 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Agosto/FP-1231-ag2011.ZIP
+2026-09-25 20:09:52 | SBS HTTP 200 | 254822 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Setiembre/FP-1231-se2011.ZIP
+2026-09-25 20:09:56 | SBS HTTP 200 | 229391 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Octubre/FP-1231-oc2011.ZIP
+2026-09-25 20:10:00 | SBS HTTP 200 | 231168 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Noviembre/FP-1231-no2011.ZIP
+2026-09-25 20:10:02 | SBS HTTP 200 | 307070 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2011/Diciembre/FP-1231-di2011.ZIP
+2026-09-25 20:10:05 | SBS HTTP 200 | 232203 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Enero/FP-1231-en2012.ZIP
+2026-09-25 20:10:08 | SBS HTTP 200 | 240465 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Febrero/FP-1231-fe2012.ZIP
+2026-09-25 20:10:10 | SBS HTTP 200 | 266745 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Marzo/FP-1231-ma2012.ZIP
+2026-09-25 20:10:14 | SBS HTTP 200 | 298301 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Abril/FP-1231-ab2012.ZIP
+2026-09-25 20:10:16 | SBS HTTP 200 | 244410 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Mayo/FP-1231-my2012.ZIP
+2026-09-25 20:10:19 | SBS HTTP 200 | 283719 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Junio/FP-1231-jn2012.ZIP
+2026-09-25 20:10:22 | SBS HTTP 200 | 250011 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Julio/FP-1231-jl2012.ZIP
+2026-09-25 20:10:26 | SBS HTTP 200 | 298107 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Agosto/FP-1231-ag2012.ZIP
+2026-09-25 20:10:29 | SBS HTTP 200 | 278408 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Setiembre/FP-1231-se2012.ZIP
+2026-09-25 20:10:32 | SBS HTTP 200 | 243891 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Octubre/FP-1231-oc2012.ZIP
+2026-09-25 20:10:35 | SBS HTTP 200 | 245108 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Noviembre/FP-1231-no2012.ZIP
+2026-09-25 20:10:38 | SBS HTTP 200 | 340055 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2012/Diciembre/FP-1231-di2012.ZIP
+2026-09-25 20:10:41 | SBS HTTP 200 | 247023 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Enero/FP-1231-en2013.ZIP
+2026-09-25 20:10:44 | SBS HTTP 200 | 249778 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Febrero/FP-1231-fe2013.ZIP
+2026-09-25 20:10:49 | SBS HTTP 200 | 287589 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Marzo/FP-1231-ma2013.ZIP
+2026-09-25 20:10:53 | SBS HTTP 200 | 308205 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Abril/FP-1231-ab2013.ZIP
+2026-09-25 20:10:56 | SBS HTTP 200 | 262104 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Mayo/FP-1231-my2013.ZIP
+2026-09-25 20:10:59 | SBS HTTP 200 | 305485 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Junio/FP-1231-jn2013.ZIP
+2026-09-25 20:11:02 | SBS HTTP 200 | 268606 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Julio/FP-1231-jl2013.ZIP
+2026-09-25 20:11:06 | SBS HTTP 200 | 320330 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Agosto/FP-1231-ag2013.ZIP
+2026-09-25 20:11:09 | SBS HTTP 200 | 304527 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Setiembre/FP-1231-se2013.ZIP
+2026-09-25 20:11:12 | SBS HTTP 200 | 266523 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Octubre/FP-1231-oc2013.ZIP
+2026-09-25 20:11:15 | SBS HTTP 200 | 266508 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Noviembre/FP-1231-no2013.ZIP
+2026-09-25 20:11:18 | SBS HTTP 200 | 357688 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2013/Diciembre/FP-1231-di2013.ZIP
+2026-09-25 20:11:21 | SBS HTTP 200 | 268999 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Enero/FP-1231-en2014.ZIP
+2026-09-25 20:11:25 | SBS HTTP 200 | 269940 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Febrero/FP-1231-fe2014.ZIP
+2026-09-25 20:11:27 | SBS HTTP 200 | 307086 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Marzo/FP-1231-ma2014.ZIP
+2026-09-25 20:11:31 | SBS HTTP 200 | 327244 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Abril/FP-1231-ab2014.ZIP
+2026-09-25 20:11:34 | SBS HTTP 200 | 281891 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Mayo/FP-1231-my2014.ZIP
+2026-09-25 20:11:37 | SBS HTTP 200 | 324236 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Junio/FP-1231-jn2014.ZIP
+2026-09-25 20:11:40 | SBS HTTP 200 | 283516 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Julio/FP-1231-jl2014.ZIP
+2026-09-25 20:11:43 | SBS HTTP 200 | 336261 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Agosto/FP-1231-ag2014.ZIP
+2026-09-25 20:11:48 | SBS HTTP 200 | 320341 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Setiembre/FP-1231-se2014.ZIP
+2026-09-25 20:11:51 | SBS HTTP 200 | 285097 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Octubre/FP-1231-oc2014.ZIP
+2026-09-25 20:11:53 | SBS HTTP 200 | 281167 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Noviembre/FP-1231-no2014.ZIP
+2026-09-25 20:11:56 | SBS HTTP 200 | 364916 bytes | https://intranet2.sbs.gob.pe/estadistica/spp/2014/Diciembre/FP-1231-di2014.ZIP
+2026-09-25 20:16:03 | Guardado datos_crudos/datos_crudos_sbs_2024200509B.csv con 60071 filas
+2026-09-25 20:16:03 | Rango de fechas: 2010-01-04 a 2025-12-31
+2026-09-25 20:16:03 | AFP encontradas: ['Habitat', 'Horizonte', 'Integra', 'Prima', 'Profuturo']
+2026-09-25 20:16:03 | Tipos de fondo: ['0', '1', '2', '3']
+2026-09-25 20:16:03 | Fin de 02_scraping_web.py
+2026-09-25 20:18:27 | Tasa de descuento: 192 meses
+2026-09-25 20:18:27 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-25 20:18:27 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-25 20:18:28 | SBS mensual: 2781 filas (192 meses)
+2026-09-25 20:18:28 | Base unida: 2781 filas, 11 columnas
+2026-09-25 20:18:28 | Celdas imputadas por interpolación lineal: 52
+2026-09-25 20:18:28 | Celdas que siguen vacías (ausencia en la fuente): 588
+2026-09-25 20:18:28 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 2781 filas y 12 columnas
+2026-09-25 20:18:28 | Periodo: 2010-01 a 2025-12
+2026-09-25 20:18:28 | SHA-256 del archivo procesado: 92a947682e0d3c1a7084121255980ff37281129b7fa5044749ce6981219d5e30
+2026-09-25 20:18:28 | Fin de 03_limpieza_datos.py
