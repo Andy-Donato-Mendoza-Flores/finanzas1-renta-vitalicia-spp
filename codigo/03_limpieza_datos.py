@@ -77,14 +77,16 @@ if sin_fecha:
 # "n.d." significa dato no disponible en la fuente
 bcrp["valor"] = pd.to_numeric(bcrp["valor"], errors="coerce")
 
-# La tasa del bono es del mercado, no de una AFP: se separa para unirla solo por mes
-tasa = bcrp[bcrp["afp"] == "Mercado"].copy()
+# Las series de mercado (bono e inflación) no pertenecen a una AFP:
+# se separan para unirlas solo por mes.
+mercado = bcrp[bcrp["afp"] == "Mercado"].copy()
 bcrp = bcrp[bcrp["afp"] != "Mercado"].copy()
 
-tasa_mensual = (tasa.pivot_table(index="mes", columns="variable",
-                                 values="valor", aggfunc="first").reset_index())
-tasa_mensual.columns.name = None
-escribir_log(f"Tasa de descuento: {tasa_mensual.shape[0]} meses")
+mercado_mensual = (mercado.pivot_table(index="mes", columns="variable",
+                                       values="valor", aggfunc="first").reset_index())
+mercado_mensual.columns.name = None
+escribir_log(f"Series de mercado: {mercado_mensual.shape[0]} meses, "
+             f"{[c for c in mercado_mensual.columns if c != 'mes']}")
 
 # Una fila por AFP y mes, una columna por variable
 bcrp_ancho = bcrp.pivot_table(index=["mes", "afp"], columns="variable",
@@ -115,10 +117,10 @@ escribir_log(f"SBS mensual: {sbs_mensual.shape[0]} filas ({sbs_mensual['mes'].nu
 
 # ---------------------------------------------------------------
 # Bloque 5. Unión de las fuentes
-# Llave AFP + mes para las series por AFP; solo mes para la tasa de mercado.
+# Llave AFP + mes para las series por AFP; solo mes para las de mercado.
 # ---------------------------------------------------------------
 base = sbs_mensual.merge(bcrp_ancho, on=["mes", "afp"], how="left")
-base = base.merge(tasa_mensual, on="mes", how="left")
+base = base.merge(mercado_mensual, on="mes", how="left")
 
 # Banco Mundial: esperanza de vida anual, se asigna a cada mes del año
 bm = pd.read_csv(CARPETA_CRUDOS / f"datos_crudos_bm_{CODIGO}.csv")
@@ -137,7 +139,8 @@ escribir_log(f"Base unida: {base.shape[0]} filas, {base.shape[1]} columnas")
 # ni se rellenan las AFP que carecen de series en el BCRP.
 # ---------------------------------------------------------------
 vars_numericas = ["valor_cuota", "valor_fondo_mill_soles", "afiliados_miles",
-                  "rentab_real_12m", "rend_bono_10a_soles", "esperanza_vida"]
+                  "rentab_real_12m", "rend_bono_10a_soles", "inflacion_12m",
+                  "esperanza_vida"]
 vars_numericas = [v for v in vars_numericas if v in base.columns]
 
 base = base.sort_values(["afp", "tipo_fondo", "mes"])

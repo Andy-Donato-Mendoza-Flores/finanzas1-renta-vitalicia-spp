@@ -1,14 +1,14 @@
 # Autor: Andy Donato Mendoza Flores
 # Código de matrícula: 2024200509B
 # Tema 25 del temario: Renta vitalicia frente a retiro programado en el SPP: valuación de una anualidad
-# Fecha de extracción: 2026-09-23
+# Fecha de extracción: 2026-09-25
 
 """
 01_extraccion_api.py
-Descarga por API las series del Sistema Privado de Pensiones y la tasa de
-descuento (BCRPData), y la esperanza de vida del Perú (Banco Mundial).
-Cada serie se solicita por separado: la API puede devolver las series en
-orden distinto al solicitado, lo que desalinearía los valores.
+Descarga por API las series del Sistema Privado de Pensiones, la tasa de
+descuento y la inflación (BCRPData), y la esperanza de vida del Perú
+(Banco Mundial). Cada serie se solicita por separado: la API puede devolver
+las series en orden distinto al solicitado, lo que desalinearía los valores.
 Ejecutar desde la carpeta raíz del proyecto:  python codigo/01_extraccion_api.py
 """
 
@@ -32,7 +32,7 @@ FECHA_CORTE = "2025-12"   # diciembre de 2025
 CODIGO = "2024200509B"
 
 # Series mensuales del BCRP. Las de AFP tienen como fuente original a la SBS;
-# la del bono, al MEF.
+# la del bono, al MEF; la del IPC, al INEI.
 SERIES_BCRP = {
     "PN01168MM": ("Habitat", "valor_fondo_mill_soles"),
     "PN01169MM": ("Integra", "valor_fondo_mill_soles"),
@@ -49,6 +49,9 @@ SERIES_BCRP = {
     # Tasa de descuento: rendimiento del bono soberano a 10 años en soles.
     # No pertenece a ninguna AFP, por eso se etiqueta como "Mercado".
     "PD31895MM": ("Mercado", "rend_bono_10a_soles"),
+    # Inflación: IPC de Lima Metropolitana, variación porcentual de 12 meses.
+    # Permite pasar la tasa nominal del bono a términos reales (ecuación de Fisher).
+    "PN01273PM": ("Mercado", "inflacion_12m"),
 }
 
 # Indicador del Banco Mundial: esperanza de vida al nacer, total (años)
