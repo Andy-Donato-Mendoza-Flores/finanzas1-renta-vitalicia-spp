@@ -632,3 +632,84 @@
 2026-09-25 20:18:28 | Periodo: 2010-01 a 2025-12
 2026-09-25 20:18:28 | SHA-256 del archivo procesado: 92a947682e0d3c1a7084121255980ff37281129b7fa5044749ce6981219d5e30
 2026-09-25 20:18:28 | Fin de 03_limpieza_datos.py
+2026-09-25 20:42:17 | Base cargada: 771 filas del Fondo 2
+2026-09-25 20:42:17 | Tabla 1 (caso base): 679 filas
+2026-09-25 20:42:17 | Punto de indiferencia: rentabilidad del fondo = 5.80 % frente a tasa del bono de 5.83 %
+2026-09-25 20:42:18 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-25 20:42:18 | Fin de 04_analisis.py
+2026-09-25 20:47:28 | BCRP HTTP 200 | PN01168MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Habitat (millones S/)
+2026-09-25 20:47:30 | BCRP HTTP 200 | PN01169MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Integra (millones S/)
+2026-09-25 20:47:32 | BCRP HTTP 200 | PN01170MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Prima (millones S/)
+2026-09-25 20:47:34 | BCRP HTTP 200 | PN01171MM | 192 periodos | Sistema privado de pensiones - Valor del Fondo - AFP Profuturo (millones S/)
+2026-09-25 20:47:35 | BCRP HTTP 200 | PN01174MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Habitat (miles)
+2026-09-25 20:47:37 | BCRP HTTP 200 | PN01175MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Integra (miles)
+2026-09-25 20:47:39 | BCRP HTTP 200 | PN01176MM | 192 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Prima (miles)
+2026-09-25 20:47:41 | BCRP HTTP 200 | PN01177MM | 191 periodos | Sistema privado de pensiones - Número de Afiliados - AFP Profuturo (miles)
+2026-09-25 20:47:43 | BCRP HTTP 200 | PN01179MM | 176 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Habitat
+2026-09-25 20:47:45 | BCRP HTTP 200 | PN01180MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Integra
+2026-09-25 20:47:47 | BCRP HTTP 200 | PN01181MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Prima
+2026-09-25 20:47:48 | BCRP HTTP 200 | PN01182MM | 192 periodos | Sistema privado de pensiones - Rentabilidad Real Últimos 12 meses - AFP Profuturo
+2026-09-25 20:47:50 | BCRP HTTP 200 | PD31895MM | 192 periodos | Tasas de interés de bonos del gobierno peruano - Rendimiento del Bono del gobierno peruano a 10 años (en S/)
+2026-09-25 20:47:52 | BCRP HTTP 200 | PN01273PM | 192 periodos | Índice de precios Lima Metropolitana (var% 12 meses) - IPC
+2026-09-25 20:47:53 | Guardado datos_crudos/datos_crudos_bcrp_2024200509B.csv con 2671 filas
+2026-09-25 20:47:54 | Banco Mundial intento 1 HTTP 200 | https://api.worldbank.org/v2/country/PER/indicator/SP.DYN.LE00.IN?format=json&date=2010:2025&per_page=100
+2026-09-25 20:47:54 | Guardado datos_crudos/datos_crudos_bm_2024200509B.csv con 16 filas
+2026-09-25 20:47:54 | Fin de 01_extraccion_api.py
+2026-09-25 20:51:42 | Series de mercado: 192 meses, ['inflacion_12m', 'rend_bono_10a_soles']
+2026-09-25 20:51:42 | BCRP en formato ancho: 768 filas, 5 columnas
+2026-09-25 20:51:42 | Marcadas como ausencia estructural (Habitat previo a 2013-06): 41 filas
+2026-09-25 20:51:42 | SBS mensual: 2781 filas (192 meses)
+2026-09-25 20:51:42 | Base unida: 2781 filas, 12 columnas
+2026-09-25 20:51:42 | Celdas imputadas por interpolación lineal: 52
+2026-09-25 20:51:42 | Celdas que siguen vacías (ausencia en la fuente): 588
+2026-09-25 20:51:42 | Guardado datos_procesados/datos_procesados_2024200509B.csv con 2781 filas y 13 columnas
+2026-09-25 20:51:42 | Periodo: 2010-01 a 2025-12
+2026-09-25 20:51:42 | SHA-256 del archivo procesado: 186929024788f4f82c9ce20bae0fc7bb0a58e67e837b381b70da377304a91bbf
+2026-09-25 20:51:42 | Fin de 03_limpieza_datos.py
+2026-09-25 20:53:38 | Base cargada: 771 filas del Fondo 2
+2026-09-25 20:53:38 | Bono nominal promedio: 5.84 % | Inflación promedio: 3.24 % | Bono real promedio: 2.54 %
+2026-09-25 20:53:38 | Secuencia de rentabilidad real: 16 años, de -11.30 % a 18.47 %
+2026-09-25 20:53:38 | Tabla 1: 727 filas
+2026-09-25 20:53:38 | Punto de indiferencia: 2.55 % de rentabilidad real frente a bono real de 2.54 %
+2026-09-25 20:53:39 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-25 20:53:39 | Fin de 04_analisis.py
+2026-09-25 21:04:38 | Base cargada: 771 filas del Fondo 2
+2026-09-25 21:04:38 | Bono nominal promedio: 5.84 % | Inflación promedio: 3.24 % | Bono real promedio: 2.54 %
+2026-09-25 21:04:38 | Secuencia de rentabilidad real: 16 años, de -11.30 % a 18.47 %
+2026-09-25 21:04:38 | Tabla 1: 727 filas
+2026-09-25 21:04:39 | Punto de indiferencia: 2.55 % de rentabilidad real frente a bono real de 2.54 %
+2026-09-25 21:04:39 | Figura 1: pensión entre S/ 381 y S/ 670 según el mes de jubilación
+2026-09-25 21:04:40 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-25 21:04:40 | Fin de 04_analisis.py
+2026-09-25 21:09:42 | Base cargada: 771 filas del Fondo 2
+2026-09-25 21:09:42 | Bono nominal promedio: 5.84 % | Inflación promedio: 3.24 % | Bono real promedio: 2.54 %
+2026-09-25 21:09:42 | Secuencia de rentabilidad real: 16 años, de -11.30 % a 18.47 %
+2026-09-25 21:09:43 | Tabla 1: 727 filas
+2026-09-25 21:09:43 | Punto de indiferencia: 2.55 % de rentabilidad real frente a bono real de 2.54 %
+2026-09-25 21:09:43 | Figura 1: pensión entre S/ 381 y S/ 670 según el mes de jubilación
+2026-09-25 21:09:43 | Figura 2: valor cuota indexado con base 2013-06
+2026-09-25 21:09:44 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-25 21:09:44 | Fin de 04_analisis.py
+2026-09-25 21:13:52 | Base cargada: 771 filas del Fondo 2
+2026-09-25 21:13:52 | Bono nominal promedio: 5.84 % | Inflación promedio: 3.24 % | Bono real promedio: 2.54 %
+2026-09-25 21:13:52 | Secuencia de rentabilidad real: 16 años, de -11.30 % a 18.47 %
+2026-09-25 21:13:52 | Tabla 1: 727 filas
+2026-09-25 21:13:52 | Punto de indiferencia: 2.55 % de rentabilidad real frente a bono real de 2.54 %
+2026-09-25 21:13:53 | Figura 1: pensión entre S/ 381 y S/ 670 según el mes de jubilación
+2026-09-25 21:13:53 | Figura 2: se omite Horizonte por tener solo 2 meses desde 2013-06
+2026-09-25 21:13:53 | Figura 2: valor cuota indexado con base 2013-06
+2026-09-25 21:13:53 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-25 21:13:53 | Fin de 04_analisis.py
+2026-09-27 20:16:19 | Base cargada: 771 filas del Fondo 2
+2026-09-27 20:16:19 | Bono nominal promedio: 5.84 % | Inflación promedio: 3.24 % | Bono real promedio: 2.54 %
+2026-09-27 20:16:19 | Secuencia de rentabilidad real: 16 años, de -11.30 % a 18.47 %
+2026-09-27 20:16:19 | Tabla 1: 727 filas
+2026-09-27 20:16:20 | Punto de indiferencia: 2.55 % de rentabilidad real frente a bono real de 2.54 %
+2026-09-27 20:16:21 | Figura 1: pensión entre S/ 381 y S/ 670 según el mes de jubilación
+2026-09-27 20:16:21 | Figura 2: se omite Horizonte por tener solo 2 meses desde 2013-06
+2026-09-27 20:16:22 | Figura 2: valor cuota indexado con base 2013-06
+2026-09-27 20:16:22 | Figuras 1, 2 y 3 guardadas en /salidas
+2026-09-27 20:16:22 | Fin de 04_analisis.py
+2026-09-27 20:16:24 | Panel (todas): 727 obs, R2 within 0.4629, poolability F=0.2706 (p=0.8466)
+2026-09-27 20:16:24 | Panel (sin imputadas): 710 obs, R2 within 0.4666
+2026-09-27 20:16:24 | Bloque 11: tablas adicionales guardadas en /salidas
